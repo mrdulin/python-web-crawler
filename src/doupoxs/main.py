@@ -17,6 +17,10 @@ def get_chapter_content(url):
         decoded_content = res.content.decode('utf-8')
         soup = BeautifulSoup(decoded_content, 'html.parser')
         title = soup.select('.entry-tit > h1')[0]
+        # or
+        # title = re.findall(
+        #     '<div class="entry-tit">.*?<h1>(.*?)</h1>', decoded_content, re.S)
+        # print(title)
         contents = re.findall(
             '<p>(.*?)</p>', decoded_content, re.S)
         f = open(fileName, 'a+')

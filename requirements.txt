@@ -3,7 +3,7 @@ beautifulsoup4==4.8.1
 certifi==2019.11.28
 chardet==3.0.4
 idna==2.8
-lxml==4.6.2
+lxml==4.6.3
 pycodestyle==2.5.0
 pymongo==3.9.0
 python-dotenv==0.10.3
